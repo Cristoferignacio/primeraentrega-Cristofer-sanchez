@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>inicio</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header id="encabezado" class="fixed top-0 left-0 w-full h-20 bg-black/70 z-50 ">
+        <div class="container mx-auto h-full px-6 flex justify-between items-center">
+            <a href="index.html" class="text-white text-2xl font-bold tracking-wider">FIKTA</a>
+            <nav class="hidden md:flex items-center gap-8">
+                <ul class="flex items-center gap-8">
+                    <li><a href="index.html" class="textoMenu">inicio</a></li>
+                    <li><a href="index.html#nosotros" class="textoMenu">nosotros</a></li>
+                    <li><a href="blogs.html" class="textoMenu">blog</a></li>
+
+                    <!-- menu desplegable(de la navegacion) -->
+                    <li class="relative group"><a href="tienda.html"
+                            class="textoMenu transition-colors flex items-center gap-1">tienda
+                            <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.06a.75.75 0 111.08 1.04l-4.25 4.65a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <ul
+                            class="absolute left-0 mt-2 w-48 p-2 bg-white rounded-md shadow-lg invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all">
+                            <li><a href="tiendaCafe.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Cafes</a>
+                            </li>
+                            <li><a href="tiendaAccesorios.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Accesorios</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- fin texto desplegable -->
+                    <li><a href="index.html#contacto" class="text-white hover:text-gray-300">contacto</a></li>
+                </ul>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="carrito.html" class="text-white hover:text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </a>
+                <a href="login.html" class="text-white hover:text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                </a>
+
+                <button id="btnMenu" class="md:hidden text-white focus:outline-none cursor-pointer">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+
+                <div id="mobilMenu" class="hidden md:hidden absolute top-20 left-0 w-full bg-black/90 ">
+                    <ul class="flex flex-col items-center gap-4 p-4">
+                        <li><a href="index.html" class="textoMenu">inicio</a></li>
+                        <li><a href="index.html#nosotros" class="textoMenu">Nosotros</a></li>
+                        <li><a href="tienda.html" class="textoMenu">Tienda</a></li>
+                        <li><a href="index.html#contacto" class="textoMenu">contacto</a></li>
+                        <li><a href="blogs.html" class="textoMenu">Blog</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- header fin -->
+
+    <!-- hero-->
+    <div class="w-full h-[600px] flex justify-center items-center fondo flex-col space-y-6 bg-cover bg-center"
+        style="background-image: url(assets/img/hero.png);">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl text-white">Gran variedad de cafe a tu alcance</h2>
+
+            <a href="tienda.html"><button
+                    class="inline-block mt-8 py-3 px-10 text-lg font-semibold text-white uppercase tracking-widest border border-white rounded-lg transition-all duration-300 ease-in-out hover:bg-white hover:text-[#2E1F27] focus:outline-none focus:ring-2 focus:ring-white">ver
+                    productos</button>
+            </a>
+        </div>
+    </div>
+
+    <!--seccion de nosotros inicio-->
+    <section class="py-16 bg-[#F5EFE6]" id="nosotros">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800">Sobre nosotros</h2>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <p class="text-lg text-gray-700 leading-relaxed">En Fikta creemos que el café es mucho más que una
+                        bebida: es un momento de conexión, inspiración y disfrute.<br>
+                        Nuestra tienda online nació con la idea de acercar a cada persona la experiencia del café de
+                        calidad,
+                        ofreciendo una cuidada selección de cafés artesanales y productos especializados que acompañan
+                        cada
+                        preparación. <br>Apostamos por el trabajo de productores locales, promoviendo la cultura
+                        cafetera y garantizando frescura en
+                        cada grano. Además, contamos con accesorios, molinos y equipos que transforman tu rutina en un
+                        verdadero
+                        ritual. <br> Nuestro propósito es simple: que cada taza que prepares con nosotros sea una
+                        experiencia única, auténtica y
+                        llena de sabor.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="assets/img/imgNosotros.jpg" alt="" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--seccion de nosotros final-->
+
+    <!-- seccion destacados inicio-->
+
+    <section>
+        <div class="container mx-auto px-4 py-8 ">
+            <h2 class="text-3xl font-bold mb-6 text-center">Categorias Destacadas</h2>
+
+            <!--empiza seccion de imagenes-->
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!--imagen 1-->
+                <a href="tiendaCafe.html" class="md:col-span-2 relative h-80 rounded-lg overflow-hidden group block">
+                    <img src="assets/img/cafeEnGrano.jpg" alt=""
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute bottom-6 left-6">
+                        <h2 class="text-yellow-400 text-2xl font-bold uppercase tracking-wider">Cafes en grano</h2>
+                    </div>
+                </a>
+                <!--imagen 2-->
+                <a href="tiendaAccesorios.html"
+                    class="md:col-span-2 relative h-80 rounded-lg overflow-hidden group block">
+                    <img src="assets/img/cafetera1.jpg" alt=""
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 bg-opocacity-40">
+
+                    <div class="absolute bottom-6 left-6">
+                        <h2 class="text-yellow-400 text-2xl font-bold uppercase tracking-wider drop-shadow-md">cafeteras
+                        </h2>
+                    </div>
+                </a>
+
+                <!--inicio imagenes seccion 2-->
+                <div class="flex flex-col items-center">
+                    <a href="tiendaAccesorios.html" class="relative h-64 w-full rounded-lg overflow-hidden group block">
+                        <img src="assets/img/accesoriosDeLimpieza.png" alt=""
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </a>
+                    <h3 class="mt-3 text-neutral-800 text-lg font-bold uppercase text-center">productos de limpieza</h3>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <a href="tiendaAccesorios.html" class="relative h-64 w-full rounded-lg overflow-hidden group block">
+                        <img src="assets/img/filtros.jpg" alt=""
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </a>
+                    <h3 class="mt-3 text-neutral-800 text-lg font-bold uppercase text-center">Filtros de cafe</h3>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <a href="tiendaAccesorios.html" class="relative h-64 w-full rounded-lg overflow-hidden group block">
+                        <img src="assets/img/molinos.png" alt=""
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </a>
+                    <h3 class="mt-3 text-neutral-800 text-lg font-bold uppercase text-center">molinos</h3>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <a href="tiendaAccesorios.html" class="relative h-64 w-full rounded-lg overflow-hidden group block">
+                        <img src="assets/img/metodosManuales.png" alt=""
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </a>
+                    <h3 class="mt-3 text-neutral-800 text-lg font-bold uppercase text-center">metodos manueles</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion destacados final-->
+
+
+
+    <div class="bg-[#4A3A32] py-14" id="suscripcion">
+        <div class="container mx-auto mb-6 px-6 text-center">
+            <h2 class="text-4xl font-bold text-[#c4b99e] mb-4">mantente informado</h2>
+            <p class="text-lg text-white mb-8"> suscribete y no te pierdas de novedades</p>
+            <form action="" class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-lg mx-auto">
+                <input type="email" placeholder="ingresa tu correo electronico"
+                    class="flex-grow w-full sm:w-auto p-3 border-2 border-[#000000] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4A056] text-[#333333] bg-white">
+                <button class="boton" type="submit" id="boton">suscribete</button>
+            </form>
+        </div>
+    </div>
+
+    <section>
+        <div class="container mx-auto mb-12 px-6">
+            <div>
+                <h2 class="text-4xl font-bold text-gray-800 text-center mb-12">Blog</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Carta 1: Blog destacado -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <a href="blog/blogUno.html">
+                        <img class="w-full h-48 object-cover" src="assets/img/imagenBlog1.webp" alt="Granos de café y una taza">
+                    </a>
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500 mb-2">Guía y consejos</p>
+                        <h3 class="text-xl font-bold text-[#2E1F27] mb-3">
+                            <a href="blog/blogUno.html" class="hover:text-[#D4A056] transition-colors">5 consejos para mejorar tu café</a>
+                        </h3>
+                        <p class="text-gray-700 leading-relaxed mb-6">5 consejos que mejorarán el sabor de tu café.</p>
+                        <a href="blog/blogUno.html" class="inline-block bg-[#D4A056] text-white font-bold py-2 px-5 rounded-lg hover:bg-[#C08F48] transition-colors">Leer más</a>
+                    </div>
+                </div>
+
+                <!-- Carta 2: conocimientos y curiosidades (idéntica a blogs.html) -->
+                <div  class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <a href="blog/blogDos.html">
+                        <img class="w-full h-48 object-cover" src="assets/img/TiposDeCafe.jpg" alt="diferetes tipos de granos de café">
+                    </a>
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500 mb-2">Guia y consejos</p>
+                        <h3 class="text-xl font-bold text-[#2E1F27] mb-3">
+                            <a href="hover:text-[#D4A056] transition-colors">tipos de cafe y sus diferencias</a>
+                        </h3>
+                        <p class="text-gray-700 leading-relaxed mb-6">conoce los diferentes tipos de cafe y sus diferencias </p>
+                        <a href="blog/blogDos.html"
+                            class="inline-block bg-[#D4A056] text-white font-bold py-2 px-5 rounded-lg hover:bg-[#C08F48] transition-colors">Leer
+                            más</a>
+                    </div>
+                </div>
+
+                <!-- Carta 3: Ver todos los artículos -->
+                <a href="blogs.html"
+                    class="group bg-[#4A3A32] rounded-lg shadow-lg p-6 flex flex-col items-center justify-center text-center transition-transform duration-300 hover:scale-105">
+                    <h3 class="text-2xl font-bold text-white mb-2">
+                        Ver Todos los Artículos
+                    </h3>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-8 w-8 text-white group-hover:translate-x-2 transition-transform" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+
+            </div>
+    </section>
+
+    <!--contacto-->
+    <section id="contacto" class="py-20 bg-[#4A3A32] ">
+        <div class="container mx-auto px-6 ">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                <div class="text-white">
+                    <h2 class="text-4xl lg:text-5xl font-bold text-[#F5EFE6] mb-6">Contacto</h2>
+                    <p class="text-lg text-gray-300 leading-relaxed mb-8">¿Tienes alguna duda o sugerencias?
+                        ¡contactanos!</p>
+
+                    <div class="space-y-4">
+                        <p>
+                            <a href="mailto:fiktaCafe@gmail.com"
+                                class="text-lg text-[#F5EFE6] hover:text-[#D4A056] transition-colors">
+                                <strong>Email:</strong> fiktaCafe@gmail.com
+                            </a>
+                        </p>
+                        <p>
+                            <a href="tel:#" class="text-lg text-[#F5EFE6] hover:text-[#D4A056] transition-colors">
+                                <strong>telefono:</strong> +569 1234 5678
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
+                        <div>
+                            <label for="nombre" class="labelInto">Nombre</label>
+                            <input type="text" id="nombre" class="inputTexto" placeholder="Tu nombre">
+                        </div>
+
+                        <div>
+                            <label for="apellido" class="labelInto">Apellido</label>
+                            <input type="text" id="apellido" class="inputTexto" placeholder="Tu apellido">
+                        </div>
+
+                        <div class="md:col-span-2">
+                            <label for=" email" class="labelInto">Email</label>
+                            <input type="text" id="apellido" class="inputTexto" placeholder="Tu Email">
+                        </div>
+
+                        <div class="md:col-span-2">
+                            <label for="Apellido" class="labelInto">Mensaje</label>
+                            <textarea name="" id="mensaje" rows="1" class="inputTexto resize-none"
+                                placeholder="Escribenos tu mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="boton">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--footer-->
+    <footer class="bg-[#1a1a1a] text-gray-400 py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
+                <div class="md:col-span-1 lg:col-span-1">
+                    <a href="" class="text-white text-2xl font-bold tracking-wider mb-4 inline-block">FIKTA</a>
+                </div>
+
+                <div class="space-y-2">
+                    <h4 class="text-white font-semibold mb-4 text-lg">Contacto</h4>
+                    <p>+56 9 1234 5678</p>
+                    <p>fiktaCafe@gmail.com</p>
+                    <p>Calle blanco,2455</p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-lg">Navegacion</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="index.html#nosotros" class="hover:text-white transition-colors">Nosotros</a></li>
+                        <li><a href="blogs.html" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="tienda.html" class="hover:text-white transition-colors">Tienda</a></li>
+                        <li><a href="index.html#contacto" class="hover:text-white transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-lg">siguenos en:</h4>
+                    <div class="flex justify-center md:justify-start space-x-5">
+                        <a href="#" class="hover:text-[#D4A056] transition-colors" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                                fill="none" stroke="#ff9500" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M16.5 7.5l0 .01" />
+                            </svg>
+
+
+                        </a>
+                        <a href="#" class="hover:text-[#D4A056] transition-colors" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                                fill="none" stroke="#ff9500" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/js.js"></script>
+</body>
+
+</html>

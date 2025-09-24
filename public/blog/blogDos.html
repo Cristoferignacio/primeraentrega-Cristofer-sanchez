@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubriendo los sabores del café: arábico, robusto y blends - FIKTA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="bg-white">
+    <!-- Header -->
+    <header id="encabezado" class="bg-black/70 z-50">
+        <div class="container mx-auto h-20 px-6 flex justify-between items-center">
+            <a href="../index.html" class="text-white text-2xl font-bold tracking-wider">FIKTA</a>
+            <nav class="hidden md:flex items-center gap-8">
+                <ul class="flex items-center gap-8">
+                    <li><a href="../index.html" class="text-white hover:text-gray-300">Inicio</a></li>
+                    <li><a href="../index.html#nosotros" class="text-white hover:text-gray-300">Nosotros</a></li>
+                    <li><a href="../blogs.html" class="text-white hover:text-gray-300">Blog</a></li>
+                    <li class="relative group">
+                        <a href="../tienda.html" class="text-white hover:text-gray-300 transition-colors flex items-center gap-1">Tienda
+                            <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.06a.75.75 0 111.08 1.04l-4.25 4.65a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <ul class="absolute left-0 mt-2 w-48 p-2 bg-white rounded-md shadow-lg invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all">
+                            <li><a href="../tiendaCafe.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Cafés</a></li>
+                            <li><a href="../tiendaAccesorios.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../index.html#contacto" class="text-white hover:text-gray-300">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="#" class="text-white hover:text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </a>
+                <a href="../login.html" class="text-white hover:text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                </a>
+                <button id="btnMenu" class="md:hidden text-white focus:outline-none cursor-pointer">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+                <div id="mobilMenu" class="hidden md:hidden absolute top-20 left-0 w-full bg-black/90">
+                    <ul class="flex flex-col items-center gap-4 p-4">
+                        <li><a href="../index.html" class="text-white hover:text-gray-300">Inicio</a></li>
+                        <li><a href="../index.html#nosotros" class="text-white hover:text-gray-300">Nosotros</a></li>
+                        <li><a href="../tienda.html" class="text-white hover:text-gray-300">Tienda</a></li>
+                        <li><a href="../index.html#contacto" class="text-white hover:text-gray-300">Contacto</a></li>
+                        <li><a href="../blogs.html" class="text-white hover:text-gray-300">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Barra de Navegación Secundaria -->
+    <div class="bg-white shadow-sm">
+        <div class="container mx-auto px-6 py-3">
+            <a href="../blogs.html" class="flex items-center text-sm font-semibold text-[#333333] hover:text-[#D4A056] transition-colors w-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Volver a Todos los Blogs
+            </a>
+        </div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <main>
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+                    
+                    <!-- Contenido Principal del Artículo -->
+                    <article class="lg:col-span-2">
+                        <p class="text-[#D4A056] font-semibold uppercase tracking-wider mb-2">Tipos de Grano</p>
+                        <h1 class="text-4xl font-bold text-[#2E1F27] mb-4">Descubriendo los sabores del café: arábico, robusto y blends</h1>
+                        <p class="text-gray-500 mb-6">Por Equipo FIKTA | Publicado el 12 de Noviembre, 2024</p>
+                        
+                        <div class="mb-8 rounded-lg overflow-hidden shadow-lg">
+                            <img src="../assets/img/TiposDeCafe.jpg" alt="Diferentes tipos de granos de café" class="w-full max-h-[450px] object-cover">
+                        </div>
+
+                        <div class="text-lg text-[#333333] leading-relaxed space-y-6">
+                            <p>El café es mucho más que una simple bebida; es una experiencia que varía dependiendo del tipo de grano utilizado. Hoy exploraremos las diferencias entre los granos de café Arábico y Robusto, y cómo estos se combinan en los blends que ofrecemos en FIKTA.</p>
+                            
+                            <div>
+                                <h2 class="text-2xl font-bold text-[#2E1F27] mb-3">Café Arábica: Sutil y Complejo</h2>
+                                <p>El café Arábico es conocido por sus sabores sutiles y complejos, que pueden incluir notas de frutas, chocolate y flores. Este tipo de café proviene principalmente de plantas que crecen en altitudes elevadas en climas tropicales y subtropicales, como en América Latina y partes de África y Asia. Los granos Arábico son apreciados por su dulzura natural y alta calidad, lo que los hace favoritos entre los conocedores.</p>
+                            </div>
+                            
+                            <div>
+                                <h2 class="text-2xl font-bold text-[#2E1F27] mb-3">Café Robusta: Intenso y Energético</h2>
+                                <p>En contraste, el café Robusta ofrece un sabor más fuerte y a menudo más amargo. Este grano contiene casi el doble de cafeína que el Arábico, lo que no solo es un potente golpe energético, sino también un perfil de sabor más intenso y terroso. Los granos Robusta son más resistentes y pueden crecer en una gama más amplia de climas y altitudes. Son comúnmente utilizados en espressos y cafés instantáneos debido a su robustez y crema densa.</p>
+                            </div>
+
+                            <div>
+                                <h2 class="text-2xl font-bold text-[#2E1F27] mb-3">Blends: Lo Mejor de Ambos Mundos</h2>
+                                <p>En FIKTA, también exploramos la magia de los blends o mezclas de café, donde combinamos Arábica y Robusta para balancear cuerpo y acidez, ofreciendo lo mejor de ambos mundos. Estos blends están diseñados para resaltar una amplia gama de sabores y satisfacer diversos paladares, desde el bebedor casual de café hasta el aficionado más experimentado.</p>
+                                <p class="mt-4">Cada tipo de café tiene su lugar en FIKTA, desde el suave y aromático Arábica hasta el robusto y enérgico Robusta, sin olvidar nuestros cuidadosamente elaborados blends. Te invitamos a explorar nuestra selección y encontrar el café que más resuene contigo.</p>
+                            </div>
+                            
+                            <p class="pt-4 border-t">Descubre más sobre nuestros cafés y encuentra tu favorito en <a href="../tienda.html" class="text-[#D4A056] font-semibold hover:underline">Fikta</a>. Explora, degusta y disfruta de la riqueza del café con nosotros.</p>
+                        </div>
+                    </article>
+
+                   
+                    <aside class="lg:col-span-1 space-y-8 lg:sticky lg:top-10">
+                        <div class="bg-[#6F4E37] p-6 rounded-lg text-center text-white">
+                            <h4 class="text-xl font-bold mb-3">No te pierdas nada</h4>
+                            <p class="mb-6">Recibe los mejores artículos y ofertas exclusivas directamente en tu email.</p>
+                            <a href="../index.html#suscripcion" class="w-full inline-block bg-white text-[#6F4E37] font-bold py-3 px-6 rounded-lg hover:bg-gray-200 transition-colors">
+                                Suscribirse aquí
+                            </a>
+                            <div class="flex justify-center space-x-5 mt-6 pt-6 border-t border-gray-500">
+                                <a href="https://www.instagram.com/" class="hover:text-[#D4A056] transition-colors" aria-label="Instagram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0">
+                                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                        <path d="M16.5 7.5l0 .01" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.facebook.com/" class="hover:text-[#D4A056] transition-colors" aria-label="Facebook">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0">
+                                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1a1a1a] text-gray-400 py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
+                <div class="md:col-span-1 lg:col-span-1">
+                    <a href="../index.html" class="text-white text-2xl font-bold tracking-wider mb-4 inline-block">FIKTA</a>
+                </div>
+                <div class="space-y-2">
+                    <h4 class="text-white font-semibold mb-4 text-lg">Contacto</h4>
+                    <p>+56 9 1234 5678</p>
+                    <p>fiktaCafe@gmail.com</p>
+                    <p>Calle blanco, 2455</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-lg">Navegación</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="../index.html#nosotros" class="hover:text-white transition-colors">Nosotros</a></li>
+                        <li><a href="../blogs.html" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="../tienda.html" class="hover:text-white transition-colors">Tienda</a></li>
+                        <li><a href="../index.html#contacto" class="hover:text-white transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-lg">Síguenos en:</h4>
+                    <div class="flex justify-center md:justify-start space-x-5">
+                         <a href="https://www.instagram.com/" class="hover:text-[#D4A056] transition-colors" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664 4.771 4.919 4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.441c-3.171 0-3.542.012-4.78.069-2.734.124-3.958 1.348-4.082 4.082-.057 1.238-.068 1.612-.068 4.78s.011 3.542.068 4.78c.124 2.734 1.348 3.958 4.082 4.082 1.238.057 1.612.068 4.78.068s3.542-.011 4.78-.068c2.734-.124 3.958-1.348 4.082-4.082.057-1.238.068-1.612-.068-4.78s-.011-3.542-.068-4.78c-.124-2.734-1.348-3.958-4.082-4.082-1.238-.057-1.612-.068-4.78-.068zm0 3.882c-2.653 0-4.818 2.165-4.818 4.818s2.165 4.818 4.818 4.818 4.818-2.165 4.818-4.818-2.165-4.818-4.818-4.818zm0 7.854c-1.677 0-3.036-1.359-3.036-3.036s1.359-3.036 3.036-3.036 3.036 1.359 3.036 3.036-1.359 3.036-3.036 3.036zm4.935-7.965c-.753 0-1.363-.61-1.363-1.363s.61-1.363 1.363-1.363 1.363.61 1.363 1.363-.61 1.363-1.363 1.363z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/" class="hover:text-[#D4A056] transition-colors" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.675 0h-21.35C.591 0 0 .591 0 1.325v21.35C0 23.409.591 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.734 0 1.325-.591 1.325-1.325V1.325C24 .591 23.409 0 22.675 0z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../assets/js/js.js"></script>
+</body>
+</html>

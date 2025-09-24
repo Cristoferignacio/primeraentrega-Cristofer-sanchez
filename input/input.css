@@ -1,0 +1,51 @@
+@import "tailwindcss";
+ 
+.textoMenu {
+  @apply text-gray-200 hover:text-white transition-colors
+}
+.boton{
+  @apply w-full sm:w-auto bg-[#D4A056] text-white font-bold py-3 px-8 rounded-lg hover:bg-[#C08F48] transition-colors duration-300
+}
+
+.labelInto{
+  @apply block text-sm font-semibold text-gray-300 mb-2
+}
+
+.inputTexto{
+  @apply w-full bg-transparent border-0 border-b-2 border-gray-500 pb-2 text-white focus:outline-none focus:ring-0 focus:border-[#D4A056] transition-colors
+}
+
+.tiendaImage{
+  @apply w-full h-64 object-cover rounded-md group-hover:scale-105 transition-transform duration-300
+}
+
+.precioTienda{
+  @apply mt-1 font-bold text-gray-800
+}
+
+.nombreProducto{
+  @apply text-lg font-semibold text-[#2E1F27]
+}
+.tarjetaProducto{
+  @apply relative w-full bg-white p-4 rounded-lg shadow-sm overflow-hidden
+}
+
+.h2Tienda{
+  @apply text-4xl font-bold text-[#2E1F27] tracking-wider uppercase text-center mb-12
+}
+
+.contenedor{
+  @apply container mx-auto px-6
+}
+
+.contenedorCartas{
+  @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10
+}
+
+.inputLogin{
+  @apply w-full bg-transparent border-0 border-b-2 border-gray-300 pb-2 text-gray-900 focus:outline-none focus:ring-0 focus:border-[#D4A056] transition-colors
+}
+
+.labelLogin{
+  @apply  absolute left-0 -top-3.5 text-gray-600 text-sm transition-all duration-300 origin-[0] pointer-events-none
+}

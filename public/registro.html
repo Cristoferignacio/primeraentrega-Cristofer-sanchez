@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>registro</title>
+</head>
+<body class="bg-[#F5EFE6] font-sans"">
+
+    <a href="index.html" class="absolute top-6 left-6 text-[#333333] hover:text-[#D4A056] transition-colors" aria-label="volver a la paguina de inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M9 11l-4 4l4 4m-4 -4h11a4 4 0 0 0 0 -8h-1" />
+        </svg>
+    </a>
+    
+    <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-md w-full space-y-8 bg-white p-10 rounded-xl shadow-lg">
+            <!-- encabezado del formulario -->
+             <div>
+                <h1 class="text-center text-3xl font-bold text-[#2E1F27]">
+                    Inicio de sesiòn
+                </h1>
+        </div>
+
+        <!-- aqui empieza el formulario-->
+
+        <form class="mt-8 space-y-6" method="post">
+            <div class="relative">
+                    <input id="username" name="username" type="text" required placeholder=" "
+                           class="inputLogin">
+                    <label for="password" 
+                           class="labelLogin">
+                        Nombre de usuario
+                    </label>
+                </div>
+<!--contaseña-->
+                 <div class="relative">
+                    <input id="contraseña" name="password" type="password" required placeholder=" "
+                           class="inputLogin">
+                    <label for="password" 
+                           class="labelLogin">
+                       contraseña
+                    </label>
+                </div>
+
+                <!-- repetir contraseña-->
+                <div class="relative">
+                    <input id="contraseña" name="passwordRepit" type="password" required placeholder=" "
+                           class="inputLogin">
+                    <label for="passwordRepit" 
+                           class="labelLogin">
+                       Repetir contraseña
+                    </label>
+                </div>
+
+                  <div class="relative">
+                    <input id="emailRegistro" name="email" type="email" required placeholder=" "
+                           class="inputLogin">
+                    <label for="email" 
+                           class="labelLogin">
+                       ingrese su email
+                    </label>
+                </div>
+                
+
+                <div>
+                    <button type="submit" id="btnRegistro" class="boton items-center">registro</button>
+                </div>
+
+                <!-- registro-->
+                 <div class="text-center text-sm text-gray-600">
+                     <p>¿ya tienes una cuenta?
+                    <a href="login.html" class="font-semibold text-[#D4A056] hover:underline">
+                        inicia sesiòn aqui
+                    </a>
+                    </p>
+                 </div>
+            </form>
+    </div>
+<script src="assets/js/js.js"></script>
+</body>
+</html>
